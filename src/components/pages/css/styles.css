@@ -1,0 +1,185 @@
+/* Mobile and Desktop */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ABABAB, #0099FF);
+  background-repeat: no-repeat;
+  color: black;
+  /* font-family: 'Roboto Mono', 'Roboto Mono', sans-serif; */
+  
+}
+
+@font-face {
+    font-family: Rammetto One;
+    src: url(../../../media/fonts/Rammetto_One/RammettoOne-Regular.ttf);
+  }
+
+*:focus {
+    outline: none;
+}
+
+.navbar {
+    padding: 0.2rem;
+
+}
+
+.company-logo {
+    width: 10rem;
+}
+
+.header-intro {
+    display: grid;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+    grid-template-columns: 10rem auto 10rem;
+    margin-top: 3rem;
+    text-shadow: 1px 3px 4px rgba(0, 170, 248, 0.767);
+    margin-bottom: 40rem;
+}
+
+.header3 {
+
+    color: #0099FF;
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+    text-shadow: 1px 3px 4px rgba(0, 170, 248, 0.767);
+}
+
+.services-container {
+    margin-bottom: 50rem;
+}
+.service-offered {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+
+.service-offered-1 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    
+}
+.service-offered-2 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
+.service-offered-3 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
+.service-offered-4 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
+
+.service-offered-1 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+
+}
+
+.service-offered-2 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+
+}
+
+.service-offered-3 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+
+}
+
+.service-offered-4 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+
+}
+
+.service-offered img{
+    width: 20em;
+    height: 20em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* .contact-person-container {
+
+} */
+
+.contact-person-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    color: grey;
+
+}
+
+.contact-person-container-header {
+    grid-column: 1 / 6;
+}
+
+.contact-person-header {
+    color: black;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+
+    .header-intro {
+        display: grid;
+        padding: 1rem;
+        font-size: 20px;
+        margin-top: 6rem;
+        grid-template-columns: 1fr;
+    }
+
+    .service-offered {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    
+    }
+
+    .service-offered img{
+        width: 10em;
+        height: 10em;
+    }
+    .contact-person-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-person-container-1 {
+        grid-column: 1 / 6;
+    }
+    .contact-person-container-2 {
+        grid-column: 2 / 6;
+    }
+    .contact-person-container-3 {
+        grid-column: 1 / 6;
+    }
+    .contact-person-container-4 {
+        grid-column: 1 / 6;
+    }
+}
