@@ -31,24 +31,29 @@ class LandingPage extends Component {
             <div>
 
                <Navbar />
+            
+                <div className="ui container">
 
-               <div className='header-intro'>
-                    
-                    <div></div>
-                    <p data-aos="fade-right" >
-                        Beat the heat. rent an AirCooler! 
-                        It's not just a fan but it's an Evaporative Air Cooler
-                        guaranteed to blast cooler air and give comfort to
-                        your guest for your event.
+                    <div className='header-intro'>
+                        
+                        <div></div>
+                        <p data-aos="fade-right" >
+                            Beat the heat. rent an AirCooler! 
+                            It's not just a fan but it's an Evaporative Air Cooler
+                            guaranteed to blast cooler air and give comfort to
+                            your guest for your event.
 
 
-                        <br/><br/>
-                        <Link activeClass="active" to="header3" spy={true} smooth={true} offset={-100} duration={500} onSetActive={this.handleSetActive}>
-                                <Button content='Learn How' icon='chevron down' circular color='orange' labelPosition='right'/>
-                        </Link>
-                    </p>
-                    <div></div>
-               </div>
+                            <br/><br/>
+                            <Link activeClass="active" to="header3" spy={true} smooth={true} offset={-100} duration={500} onSetActive={this.handleSetActive}>
+                                    <Button content='Learn How' icon='chevron down' circular color='orange' labelPosition='right'/>
+                            </Link>
+                        </p>
+                        <div></div>
+                </div>
+
+                </div>
+               
                
 
                <div className="ui container services-container" data-aos="fade-right">
