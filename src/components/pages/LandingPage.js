@@ -38,7 +38,7 @@ class LandingPage extends Component {
                         
                         <div></div>
                         <p data-aos="fade-right" >
-                        Beat the heat! Rent an AirCooler!
+                        Beat the heat! Rent an IWATA AirCooler!
                          It’s not just a fan but it’s an EVAPORATIVE AIR COOLER 
                          guaranteed to blast cooler air and give comfort to your guests 
                          on special events.
