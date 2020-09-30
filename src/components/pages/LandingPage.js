@@ -3,6 +3,7 @@ import { Button } from 'semantic-ui-react';
 import Scroll from 'react-scroll';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import MetaTags from 'react-meta-tags';
 
 
 
@@ -29,6 +30,16 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
+
+                <div className="wrapper">
+                    <MetaTags>
+                        <title>IWATA Air Cooler for rent</title>
+                        <meta name="description" content="IWATA evaporative air cooler for rent. Beat the heat! Guaranteed to blast cooler air and give comfort to your guests on special events. Great for indoor and outdoor activities." />
+                        <meta property="og:title" content="IWATA Air Cooler for rent" />
+                    </MetaTags>
+                    
+                </div>
+
 
                <Navbar />
             
