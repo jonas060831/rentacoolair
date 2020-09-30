@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import MetaTags from 'react-meta-tags';
 
 
-
 import Navbar from './navbar/Navbar'
 
 //css
