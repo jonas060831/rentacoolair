@@ -15,6 +15,8 @@ import Image1 from '../../media/images/cards/1.JPG'
 import Image2 from '../../media/images/cards/2.JPG'
 import Image3 from '../../media/images/cards/3.JPG'
 import Image4 from '../../media/images/cards/4.JPG'
+import Image5 from '../../media/images/cards/5.JPG'
+import Image6 from '../../media/images/cards/6.JPG'
 
 //scroll
 let Link = Scroll.Link;
@@ -93,6 +95,20 @@ class LandingPage extends Component {
 
                             <div className="service-offered-4">
                                 <img src={Image4} alt={Image4}/>
+
+                                <h5>Religious Events</h5> <br/>
+                            </div>
+
+
+                            <div className="service-offered-5">
+                                <img src={Image5} alt={Image5}/>
+
+                                <h5>Inauguration</h5> <br/>
+                            </div>
+
+
+                            <div className="service-offered-6">
+                                <img src={Image6} alt={Image6}/>
 
                                 <h5>Any other Services</h5> <br/>
                             </div>

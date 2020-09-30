@@ -85,7 +85,22 @@ body {
     text-align: center;
     font-style: normal;
 }
+
 .service-offered-4 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
+
+.service-offered-5 {
+    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
+
+.service-offered-6 {
     box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
     color: grey;
     text-align: center;
@@ -111,6 +126,17 @@ body {
 }
 
 .service-offered-4 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+
+}
+
+.service-offered-5 h5 {
+    font-style: normal;
+    font-family: "Rammetto One", serif;
+}
+
+.service-offered-6 h5 {
     font-style: normal;
     font-family: "Rammetto One", serif;
 
