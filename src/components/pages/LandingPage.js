@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react';
+import { Button, Image } from 'semantic-ui-react';
 import Scroll from 'react-scroll';
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -76,39 +76,39 @@ class LandingPage extends Component {
                     <div className='service-offered'>
 
                             <div className="service-offered-1">
-                                <img src={Image1} alt={Image1}/>
+                                <Image src={Image1} alt={Image1}/>
 
                                 <h5>Weddings</h5> <br/>
                             </div>
 
                             <div className="service-offered-2">
-                                <img src={Image2} alt={Image2}/>
+                                <Image src={Image2} alt={Image2}/>
 
                                 <h5>Caterings</h5> <br/>
                             </div>
 
                             <div className="service-offered-3">
-                                <img src={Image3} alt={Image3}/>
+                                <Image src={Image3} alt={Image3}/>
 
                                 <h5>Basketball Events</h5> <br/>
                             </div>
 
                             <div className="service-offered-4">
-                                <img src={Image4} alt={Image4}/>
+                                <Image src={Image4} alt={Image4}/>
 
                                 <h5>Religious Events</h5> <br/>
                             </div>
 
 
                             <div className="service-offered-5">
-                                <img src={Image5} alt={Image5}/>
+                                <Image src={Image5} alt={Image5}/>
 
                                 <h5>Inauguration</h5> <br/>
                             </div>
 
 
                             <div className="service-offered-6">
-                                <img src={Image6} alt={Image6}/>
+                                <Image src={Image6} alt={Image6}/>
 
                                 <h5>Any other Services</h5> <br/>
                             </div>
