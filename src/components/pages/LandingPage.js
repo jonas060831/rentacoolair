@@ -11,12 +11,7 @@ import Navbar from './navbar/Navbar'
 //css
 import './css/styles.css'
 
-import Image1 from '../../media/images/cards/1.JPG'
-import Image2 from '../../media/images/cards/2.JPG'
-import Image3 from '../../media/images/cards/3.JPG'
-import Image4 from '../../media/images/cards/4.JPG'
-import Image5 from '../../media/images/cards/5.JPG'
-import Image6 from '../../media/images/cards/6.JPG'
+
 
 //scroll
 let Link = Scroll.Link;
@@ -76,39 +71,39 @@ class LandingPage extends Component {
                     <div className='service-offered'>
 
                             <div className="service-offered-1">
-                                <Image src={Image1} alt={Image1}/>
+                                <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/1.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/1.JPG"/>
 
                                 <h5>Weddings</h5> <br/>
                             </div>
 
                             <div className="service-offered-2">
-                                <Image src={Image2} alt={Image2}/>
+                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/2.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/2.JPG"/>
 
                                 <h5>Caterings</h5> <br/>
                             </div>
 
                             <div className="service-offered-3">
-                                <Image src={Image3} alt={Image3}/>
+                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/3.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/3.JPG"/>
 
                                 <h5>Basketball Events</h5> <br/>
                             </div>
 
                             <div className="service-offered-4">
-                                <Image src={Image4} alt={Image4}/>
+                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/4.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/4.JPG"/>
 
                                 <h5>Religious Events</h5> <br/>
                             </div>
 
 
                             <div className="service-offered-5">
-                                <Image src={Image5} alt={Image5}/>
+                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/5.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/5.JPG"/>
 
                                 <h5>Inauguration</h5> <br/>
                             </div>
 
 
                             <div className="service-offered-6">
-                                <Image src={Image6} alt={Image6}/>
+                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/6.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/6.JPG"/>
 
                                 <h5>Any other Services</h5> <br/>
                             </div>
