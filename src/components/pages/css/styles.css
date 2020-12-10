@@ -76,7 +76,7 @@ body {
 }
 
 .gfiao-container {
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
 }
 
 @import "~react-image-gallery/styles/css/image-gallery.css";

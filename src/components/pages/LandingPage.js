@@ -165,7 +165,7 @@ class LandingPage extends Component {
                     <br/>
                         
 
-                    <video src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/videos/video_1.mov" width="100%" height="100%" controls />
+                    <video src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/videos/video_1.mov" poster="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/videos/video_1_poster.png" width="100%" height="100%" controls />
                     
                </div>
 
