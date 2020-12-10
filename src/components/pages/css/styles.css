@@ -57,105 +57,35 @@ body {
 }
 
 .services-container {
+    margin-bottom: 17rem;
+}
+
+.service-offered {
+    cursor: pointer;
+}
+
+.service-offered:hover {
+    color: #0099FF;
+}
+
+.service-offered h5 {
+    font-style: normal;
+    text-align: center;
+    font-family: "Rammetto One", serif;
+
+}
+
+.gfiao-container {
     margin-bottom: 15rem;
 }
-.service-offered {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
 
-}
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 
-.service-offered-1 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    
-}
-.service-offered-2 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    font-style: normal;
-}
-.service-offered-3 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    font-style: normal;
-}
-
-.service-offered-4 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    font-style: normal;
-}
-
-.service-offered-5 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    font-style: normal;
-}
-
-.service-offered-6 {
-    box-shadow: 2px 3px 5px rgba(125, 195, 228, 0.767);
-    color: grey;
-    text-align: center;
-    font-style: normal;
-}
-
-.service-offered-1 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-
-}
-
-.service-offered-2 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-
-}
-
-.service-offered-3 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-
-}
-
-.service-offered-4 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-
-}
-
-.service-offered-5 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-}
-
-.service-offered-6 h5 {
-    font-style: normal;
-    font-family: "Rammetto One", serif;
-
-}
-
-.service-offered img{
-    width: 20em;
-    height: 20em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-/* .contact-person-container {
-
-} */
 
 .contact-person-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     color: grey;
 
@@ -180,32 +110,14 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .service-offered {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-    
-    }
-
-    .service-offered img{
-        width: 10em;
-        height: 10em;
-    }
     .contact-person-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .contact-person-container-1 {
-        grid-column: 1 / 6;
+
+    .contact-person-container-header {
+
+        grid-column: 1 / 4;
     }
-    .contact-person-container-2 {
-        grid-column: 1 / 6;
-    }
-    .contact-person-container-3 {
-        grid-column: 1 / 6;
-    }
-    .contact-person-container-4 {
-        grid-column: 1 / 6;
-    }
+
 }

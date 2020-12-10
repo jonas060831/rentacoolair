@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Image } from 'semantic-ui-react';
+import { Button, Image, Card, Icon } from 'semantic-ui-react';
 import Scroll from 'react-scroll';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import {Helmet} from "react-helmet";
+import ImageGallery from 'react-image-gallery';
 
 
 
@@ -24,7 +25,62 @@ Aos.init({
 
 
 class LandingPage extends Component {
+
+
+    state = {
+        servicesOffered : [
+            {
+                imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/weddings.JPG',
+                description : 'Weddings' 
+            },
+            {
+                imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/caterings.JPG',
+                description : 'Caterings' 
+            },
+            {
+                imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/inaugurations.JPG',
+                description : 'Religious Events' 
+            },
+            {
+                imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/religious_events.JPG',
+                description : 'Inauguration' 
+            },
+            {
+                imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/any_other_services.JPG',
+                description : 'Any other Services' 
+            },
+            
+        ],
+
+        extraImages: [
+            {
+                original: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_3738.JPG',
+                thumbnail: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_3738-thumb.png'
+            },
+            {
+                original: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_3934.JPG',
+                thumbnail: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_3934-thumb.png'
+            },
+            {
+                original: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4135.JPG',
+                thumbnail: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4135-thumb.png'
+            },
+            {
+                original: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4254.JPG',
+                thumbnail: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4254-thumb.png'
+            },
+            {
+                original: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4282.JPG',
+                thumbnail: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/extra-images/IMG_4282-thumb.png'
+            }
+        ]
+    }
+
     render() {
+
+        const ternaryrowCount = window.screen.width <= 414 ? 1 : 3
+
+        const { servicesOffered, extraImages } = this.state
         return (
             <div>
                 <Helmet>
@@ -64,48 +120,56 @@ class LandingPage extends Component {
                         Our Services
                     </h3>
                     <br/>
-                    <div className='service-offered'>
+                    <Card.Group  itemsPerRow={ternaryrowCount}> 
+                            { servicesOffered.map( (service, index) => {
+                                return (
+                                    <Card raised key={index} className='service-offered' >
+                                        <Image src={service.imageUrl} wrapped ui={true} />
+                                        <Card.Content>
+                                            <h5>{service.description}</h5>
+                                        {/* <Card.Meta>
+                                            <span className='date'>Joined in 2015</span>
+                                        </Card.Meta> */}
+                                        {/* <Card.Description>
+                                            Matthew is a musician living in Nashville.
+                                        </Card.Description> */}
+                                        </Card.Content>
+                                        <Card.Content extra>
 
-                            <div className="service-offered-1">
-                                <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/1.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/1.JPG"/>
+                                        </Card.Content>
+                                    </Card>
+                                )
+                            } ) }
 
-                                <h5>Weddings</h5> <br/>
-                            </div>
-
-                            <div className="service-offered-2">
-                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/2.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/2.JPG"/>
-
-                                <h5>Caterings</h5> <br/>
-                            </div>
-
-                            <div className="service-offered-3">
-                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/3.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/3.JPG"/>
-
-                                <h5>Basketball Events</h5> <br/>
-                            </div>
-
-                            <div className="service-offered-4">
-                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/4.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/4.JPG"/>
-
-                                <h5>Religious Events</h5> <br/>
-                            </div>
-
-
-                            <div className="service-offered-5">
-                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/5.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/5.JPG"/>
-
-                                <h5>Inauguration</h5> <br/>
-                            </div>
-
-
-                            <div className="service-offered-6">
-                            <Image src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/6.JPG" alt="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/6.JPG"/>
-
-                                <h5>Any other Services</h5> <br/>
-                            </div>
-
-                    </div>
+                    </Card.Group>
                </div>
+
+
+
+               <div className="ui container gfiao-container" data-aos="fade-right">
+                    <h3 className='header3'>
+                        Great for Indoor and Outdoor Events
+                    </h3>
+                    <br/>
+                        
+                        <ImageGallery
+                            items={extraImages} 
+                        />
+               </div>
+
+            
+               <div className="ui container gfiao-container" data-aos="fade-right">
+                    <h3 className='header3'>
+                        <Icon name='video' alt='video'/>
+                    </h3>
+                    <br/>
+                        
+
+                    <video src="https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/videos/video_1.mov" width="100%" height="100%" controls />
+                    
+               </div>
+
+
                
 
                <div className='ui container'>
@@ -124,7 +188,7 @@ class LandingPage extends Component {
                         North & part of Metro Manila <br/>
 
                         <h4 className='contact-person-header'>Rowena</h4> <br/>
-                        0917-458-3658
+                        0917-458-3656
                     </div>
 
                     <div className='contact-person-container-2' >
