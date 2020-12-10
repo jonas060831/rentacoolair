@@ -39,11 +39,11 @@ class LandingPage extends Component {
             },
             {
                 imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/inaugurations.JPG',
-                description : 'Religious Events' 
+                description : 'Inauguration' 
             },
             {
                 imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/religious_events.JPG',
-                description : 'Inauguration' 
+                description : 'Religious Events' 
             },
             {
                 imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/any_other_services.JPG',
