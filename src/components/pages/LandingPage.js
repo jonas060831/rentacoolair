@@ -47,7 +47,7 @@ class LandingPage extends Component {
             },
             {
                 imageUrl: 'https://rentacoolair.s3-us-west-1.amazonaws.com/defaults/images/any_other_services.JPG',
-                description : 'Any other Services' 
+                description : 'Other Services' 
             },
             
         ],
@@ -207,11 +207,13 @@ class LandingPage extends Component {
 
                     <div className='contact-person-container-4' >
 
-                        For Complaints: <br/>
+                        Email us at: <br/>
 
-                        <h4 className='contact-person-header'>Goalbert</h4> <br/>
-                        goalbertgotauco@yahoo.com
-
+                        {/* <h4 className='contact-person-header'>Goalbert</h4> <br/> */} <br/>
+                        <b>
+                            <a href={`mailto:rentacoolair@gmail.com?subject=Inquiry about Iwata Air Cooler&body=<<Insert Your Message Here>>`}>rentacoolair@gmail.com</a>
+                        </b>
+                        
                     </div>
 
 
